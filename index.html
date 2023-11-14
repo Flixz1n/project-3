@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Loja de Jogos</h1>
+            <button class="navbar-toggler" data-bs-target="menu" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="sobre" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class="w-100 h-80" src="images/caroussel/slide1.png" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100 h-80" src="images/caroussel/slide2.png" alt="Duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class="w-100 h-80" src="images/caroussel/slide3.png" alt="Uma mesa com comida">
+                    </div>
+                </div>
+                <button type="button" data-bs-target="#carousel" data-bs-slide="prev" class="carousel-control-prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide="next" class="carousel-control-next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/restaurante.jpg"  class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored-1">a loja</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error hic laudantium ullam optio soluta numquam recusandae, placeat nulla consequuntur saepe, culpa illo quaerat, dolor laborum ipsum. Nemo exercitationem dolore placeat?</p>
+                            <h3 class="section-title">Sobre <span class="text-colored-1">os produtos</span></h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus quo, totam distinctio tempore est explicabo delectus architecto quam eos, soluta adipisci quis ea officia ad maiores, expedita esse praesentium odit.</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <section id="cardapio">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Nossos <span class="text-colored">produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2"> 
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-ps5" class="fw-bold text-start nav-link text-colored active">Jogos de PlayStation 5</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#jogos-xbox" class="fw-bold text-start nav-link text-colored">Jogos de Xbox Series</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="fw-bold text-start nav-link text-colored">Acessorios</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#consoles" class="fw-bold text-start nav-link text-colored">Consoles</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div id="jogos-ps5" class="tab-pane active">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/DeathSps5.avif" alt="Jogo Death Stranding Director's Cut - PS5">
+                                        <h5 class="text-colored fw-bold mt-2">Death Stranding Director's Cut</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/DSps5.avif" alt="Jogo Demon’s Souls - PS5">
+                                        <h5 class="text-colored fw-bold mt-2">Demon’s Souls</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/EAFC24ps5.avif" alt="Jogo EA Sports FC 24 Midia Fisica PS5 PT BR Standard">
+                                        <h5 class="text-colored fw-bold mt-2">EA Sports FC 24</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/fallenorderps5.avif" alt="Jogo Star Wars Jedi: Fallen Order PS5 Electronic Arts">
+                                        <h5 class="text-colored fw-bold mt-2">Star Wars Jedi: Fallen Order</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/gowps5.avif" alt="Jogo God of War Ragnarök PS5">
+                                        <h5 class="text-colored fw-bold mt-2">God of War Ragnarök</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/Horizonps5.avif" alt="Jogo PS5 Horizon Forbidden West">
+                                        <h5 class="text-colored fw-bold mt-2">Horizon Forbidden West</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/legoStarwarsps5.avif" alt="Jogo Lego Star Wars: A Saga Skywalker Deluxe Edition - PS5">
+                                        <h5 class="text-colored fw-bold mt-2">Lego Star Wars: A Saga Skywalker</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos ps5/spiderman2ps5.avif" alt="Jogo Marvel's Spider-Man 2 - Edição de Lançamento - PS5">
+                                        <h5 class="text-colored fw-bold mt-2">Marvel's Spider-Man 2</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="jogos-xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/acorigins.avif" alt="Assassin`s Creed: Origins - Xbox One\Xbox Series X">
+                                        <h5 class="text-colored fw-bold mt-2">Assassin`s Creed: Origins</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/gothamKnights.avif" alt="Jogo Gotham Knights - Xbox Series X">
+                                        <h5 class="text-colored fw-bold mt-2">Gotham Knights</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/gta5.avif" alt="Jogo Xbox Series X | GTA V ROCKSTAR GAMES">
+                                        <h5 class="text-colored fw-bold mt-2">GTA V</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/hades.avif" alt="Jogo Hades - Xbox">
+                                        <h5 class="text-colored fw-bold mt-2">Hades</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/metroexodus.avif" alt="Jogo Metro Exodus: Complete Edition - Xbox Series X">
+                                        <h5 class="text-colored fw-bold mt-2">Metro Exodus: Complete Edition</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/mk1.avif" alt="Jogo Mortal Kombat 1 PS5 Edição SteelCase - Mídia Física">
+                                        <h5 class="text-colored fw-bold mt-2">Mortal Kombat 1</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/jogos xbox series/starwars.avif" alt="Game Lego Star Wars: A Saga Skywalker - Xbox One/Xbox Series X">
+                                        <h5 class="text-colored fw-bold mt-2">ego Star Wars: A Saga Skywalker</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorios">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios ps5/controlebranco.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Controle de PS5 padrão</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios xbox/controlepreto.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Controle de Xbox padrão</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios ps5/controlecinza.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Controle Cinza de PS5</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios xbox/controlerosa.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Controle Rosa de Xbox</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios ps5/fonesemfio.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Headset sem fio de PS5</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios xbox/controlevermelho.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Controle vermelho de Xbox</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios ps5/tampadeconsole.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Tampa de Console Rosa</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/acessorios xbox/skinBMO.avif" alt="">
+                                        <h5 class="text-colored fw-bold mt-2">Skin XBOX ONE FAT Adesiva BMO - Hora De Aventura</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="consoles">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/consoles/play5-padrao.avif" alt="Console PlayStation 5 Standard Edition Branco + EA Sports FC24 + Controle Sem Fio Dualsense Branco">
+                                        <h5 class="text-colored fw-bold mt-2">Console PlayStation 5 Standard Edition Branco + EA Sports FC24 + Controle Sem Fio Dualsense Branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/consoles/xboxS-padrao.avif" alt="Console Xbox Series S 500GB + Controle Sem Fio - Branco">
+                                        <h5 class="text-colored fw-bold mt-2">Console Xbox Series S 500GB + Controle Sem Fio - Branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/consoles/play5-spider.avif" alt="Console PlayStation 5 Bundle Marvel’s Spider-Man 2 - Limited Edition">
+                                        <h5 class="text-colored fw-bold mt-2">Console PlayStation 5 Bundle Marvel’s Spider-Man 2 - Limited Edition</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/consoles/xboxX-diablo.avif" alt="Console Xbox Series X 1TB SSD Bundle Diablo IV">
+                                        <h5 class="text-colored fw-bold mt-2">Console Xbox Series X 1TB SSD Bundle Diablo IV</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" name="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="text-colored section-title fs-4">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes socias
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
